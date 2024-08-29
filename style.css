@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* task1 */
+
+#loading{
+    background: #000000 url("./taransparentLoading.gif") center center;
+    background-repeat: no-repeat;
+    background-size: 10%;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;   
+}
+
+/* task3 */
+
+#task3{
+    width: 40%;
+    border-radius: 5rem;
+    margin: 5% 0% 5% 10% ;
+}
+
+#task3:hover{
+    width: 50% ;
+}
+
+/* task4 */
+
+#task4{
+    background-color: #8effd2 ;
+    padding: 5%;
+}
+#ch{
+    display: none;
+}
+#task4Content{
+    display: none;
+}
+#task4 label{
+    display: inline-block;
+    margin-top: 10%;
+    padding: 2% 5%;
+    cursor: pointer;
+    background-color: black;
+    color: #fff;
+}
+#ch:checked ~ #task4Content{
+    display: block;
+}
+#ch:checked ~ label{
+ display: none;
+}
+
+/* task5 */
+
+.container {
+    padding: 2rem;
+}
+
+.slider-wrapper {
+    position: relative;
+    max-width: 48rem;
+    margin: 0 auto;
+}
+
+.slider{
+    display: flex;
+    aspect-ratio: 16 / 9;
+    overflow-x: auto ;
+    scroll-snap-type: x mandatory ;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+    border-radius: 0.5rem;
+}
+
+.slider-nav{
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left : 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.slider-nav a{
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+}
+
+/* task6 */
+
+
+fieldset{
+    width: 90%;
+    margin-left: 3%;
+    padding-left: 1%;
+}
+
+
+legend{
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+    text-decoration: underline;
+    text-align: center;
+    padding-bottom: 4%;
+}
+label{
+     padding-left: 4%;
+     
+    }
+    
+    input,label{
+    font-size: 200%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+input{
+    margin-top: 1%;
+    display: block;
+    width: 80%;
+    padding-left: 1%;
+    margin-left: 10%;
+    margin-bottom: 3%;
+}
+
+#fieldsetButton{
+    margin-top: 0%;
+    font-size: 200%;
+    align-items: center;
+    padding: 1% 5%;
+    margin-bottom: 2%;
+    
+}
+
+/* task7 */
+
+#task7{
+    margin-bottom: 5%;
+}
+
+.task7b{
+    color: black;
+    font-size: 50px;
+    margin-top: 25%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: relative;
+    display: inline;
+    transition: hover 5s ease-in;
+}
+
+.task7b:hover:after{
+    content: attr(data-title);
+    color: red;
+    background-color: #000000;
+    padding: 1% 10%;
+    text-align: center;
+    border-radius: 20%;
+    /* display: inline-block; */
+    position: absolute;
+    /* transform: scale(1.1); */
+    z-index: 1;
+    top: -60%;
+    left: 20%;
+    z-index: 1;
+    font-size: 60%;
+}

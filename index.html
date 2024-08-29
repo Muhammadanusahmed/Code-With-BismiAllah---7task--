@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="loading"></div>
+<h1>task 1 : loading</h1>     
+
+<h1>task 3 : hover effect</h1>
+<img id="task3" src="./about1.jpg" alt="effect">
+
+
+
+<h1>task 4 : image slider</h1>
+
+<div id="task4">
+   <input id="ch" type="checkbox">
+
+   <h2>Basic WEB pack</h2>
+   <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores, aspernatur.</p>
+   <label for="ch">show more</label>
+   <div id="task4Content">
+    <p>dolor sit amet consectetur adipisicing elit. Hic non dolor delectus quaerat animi odio similique adipisci aperiam ut mollitia?</p>
+    <label for="ch">show less</label>
+   </div>
+</div>
+
+
+
+<h1>task 5 : image slider</h1>
+
+<section class ="container">
+    <div class="slider-wrapper">
+        <div class="slider">
+            <img id="slide1" src="./about1.jpg" alt="slide1">
+            <img id="slide2" src="./about2.jpg" alt="slide2">
+            <img id="slide3" src="./about3.jpg" alt="slide3">
+        </div>
+        <div class="slider-nav">
+            <a href="#slide1"></a>
+            <a href="#slide2"></a>
+            <a href="#slide3"></a>
+        </div>
+    </div> </section>
+
+
+
+<h1 id ="task6">task 6 : form</h1>
+
+<fieldset >
+    <legend style="font-size: 5rem;">form</legend>
+    <label for="name">name :</label>
+    <input id="name" type="text" placeholder="enter your name" required >
+    <label for="email">email :</label>
+    <input id="email" type="email" placeholder="enter your email" required>
+    <label for="password">password :</label>
+    <input id="password" type="password" placeholder="enter your password" required>
+    <button id="fieldsetButton">submit</button>
+</fieldset>
+
+
+
+<h1 id ="task7">task 7 : tooltip</h1>
+
+<h2 class="task7a" style="margin-bottom: 4%;" title="normally usable tooltip"> (A) normal tooltip</h2>
+<div class="task7b" data-title="it is title attribute"> (B)designable tooltip</div>
+<script>
+    let loading = document.getElementById("loading");
+    window.addEventListener("load",()=>{loading.style.display="none"});
+</script>
+</body>
+</html>
